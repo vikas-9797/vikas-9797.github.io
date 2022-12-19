@@ -3,7 +3,7 @@
 Find the deployed project at https://vikas-9797.github.io
 
 [GitHub](https://github.com/vikas-9797) |
-[LinkedIn](https:///) |
+[LinkedIn](https://www.linkedin.com/in/vikas222//) |
 [Portfolio](https://vikas-9797.github.io/)
 
 ---
