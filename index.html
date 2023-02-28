@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
     <title>Vikas yadav</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <style>
+        :root {
+  --bg-color: hsl(177, 82%, 58%);
+  --text-color: #0f0c27;
+  --hover: red;
+}
+             * {
+  /* margin: 0; */
+  padding: 0;
+ 
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+}
         body {
             font-family: "Poppins", sans-serif;
             margin: 0px;
@@ -152,14 +167,20 @@
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 45px;
+            
         }
         #box>div{
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             padding: 20px;
             border-radius: 10px;
+            height: 100%;
+          
+            
         }
+        
         #box>div>img {
             width: 100%;
+            height: 60%;
         }
         #box>div>img:hover{
             cursor: pointer;
@@ -301,6 +322,7 @@
 }
 
 
+
 @media (max-width: 500px) {
   .github-stat {
     width: 100%;
@@ -366,6 +388,7 @@
             #box {
             grid-template-columns: repeat(1,1fr);
             gap: 45px;
+            /* height: 100%; */
             }
             #container5{
                 width: 90%;
@@ -412,17 +435,136 @@
             #box {
             grid-template-columns: repeat(1,1fr);
             gap: 45px;
+            /* height: 100%;
+            margin: auto; */
             }
             #container5{
                 width: 90%;
               
             }
         }
+        @media screen and (max-width:1500px) {
+         #box>div{
+            height: 500px;
+         }
+         #box>div>img{
+            height: 45%;
+         }
+        }
+        @media screen and (max-width:321px) {
+         #box>div{
+            height: 500px;
+         }
+         #box>div>img{
+            height: 40%;
+         }
+        }
+
+
+
+   
+
+
+        header {
+            box-sizing: border-box;
+            /* margin: 0px;
+            padding: 0px; */
+            position: fixed;
+            
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--bg-color);
+            padding: 0px 10%;
+            transition: 0.2s;
+            box-shadow: -3px -3px 7px #ffffff73,
+            2px 2px 5px rgba(94, 104, 121, 0.288);
+
+            background-color: hsl(177, 82%, 58%);
+            }
+
+header.shadow {
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+.logo {
+  font-size: 1.61rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.navbar {
+  display: flex;
+}
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: var(--hover);
+}
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+#darkmode {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+      header {
+        padding: 11px 4%;
+      }
+      #menu-icon {
+        display: initial;
+        color: var(--text-color);
+      }
+      header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        transition: 0.2s ease;
+        text-align: center;
+      }
+      .navbar.active {
+        top: 75%;
+      }
+      .navbar a {
+        display: block;
+        background: var(--bg-color);
+      }
+      #darkmode {
+        position: absolute;
+        top: 1.4rem;
+        right: 2rem;
+      }
+}
+
+@media (max-width: 991px) {
+      header {
+        padding: 18px 4%;
+      }
+}
+
+
+
+
     </style>
 </head>
 <body>
     <a name="home"></a>
-    <div id="navbar">
+    <!-- <div id="navbar">
         <div><a href="#home">Home</a></div>
         <div><a href="#about">About</a></div>
         <div><a href="#skills">Skills</a></div>
@@ -430,7 +572,31 @@
         <div><a href="#contact">Contact</a></div>
         <div><a id="resume" style=" text-decoration: none; " href="./images/fw18_0302-Vikas-Yadav-Resume .pdf" download>Resume</a></div>
        
-    </div>
+    </div> -->
+
+
+
+
+    <header style="width: 100%;">
+        <a href="index.html" class="logo">VIKAS</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar" >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <!-- <li><a href="#github">Github</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+            <li><a id="resume" style=" text-decoration: none; " href="./images/fw18_0302-Vikas-Yadav-Resume .pdf" download>Resume</a></li>
+           
+        </ul>
+      </header>
+
+
+
+
     <div id="container1">
         
         <div id="intro">
@@ -500,8 +666,10 @@
                 <p>An Plant Nursery where customer can buy and planter can sell their plants and seeds. Service Layers, Data Access Layers to generate different end points.</p>
                 <p>A collaborative project, built in 5 days by a team of 5 developers.</p>
                 <p>JAVA | SQL | Spring | Springboot</p>
-                <button id="plantcode" class="button">CODE <i class="fa-brands fa-github"></i></button>
-                <button id="plantlive" class="button">VIDEO <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                <div>
+                    <button  id="plantcode" class="button">CODE <i class="fa-brands fa-github"></i></button>
+                <button  id="plantlive" class="button">VIDEO <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
             </div>
             <div>
                 <img src="./images/Bewakoof.png">
@@ -521,14 +689,16 @@
                 <button id="bobbicode" class="button">CODE <i class="fa-brands fa-github"></i></button>
                 <button id="bobbilive" class="button">LIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
             </div>
-            <div>
+            <div class="vikas1" >
                 <img src="./images/Screenshot (109).png">
                 <h3>KIMAYE.COM CLONE </h3>
                 <p>This is a clone for kimaye.com, Kimaye is growers of India's finest fruits, you can order fresh fruits online through their website. </p>
                 <p>A collaborative project, built in 5 days by a team of 5 developers.</p>
                 <p>HTML | CSS | JavaScript</p>
-                <button id="portfoliocode" class="button">CODE <i class="fa-brands fa-github"></i></button>
-                <button id="portfoliolive" class="button">LIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                <div class="vikasin">
+                <button  id="portfoliocode" class="button">CODE <i class="fa-brands fa-github"></i></button>
+                <button  id="portfoliolive" class="button">LIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
             </div>
         </div>
     </div>
@@ -683,5 +853,26 @@
         window.open(
               "https://github.com/vikas-9797", "_blank");
     }
+
+
+
+
+let header = document.querySelector('header');
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+ 
+ 
+window.addEventListener('scroll', () => {
+    header.classList.toggle('shadow', window.scrollY > 0);
+});
+ 
+menu.onclick = () => {
+    navbar.classList.toggle('active');
+}
+window.onscroll = () => {
+    navbar.classList.remove('active');
+}
+ 
+
    
 </script>
