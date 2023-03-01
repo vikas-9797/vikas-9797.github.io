@@ -559,6 +559,108 @@ header.shadow {
 
 
 
+#tech-stack{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+   
+}
+#tech-stack>h1{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    color: rgb(64,112,244);
+}
+#toolstitle{
+    margin-top: 40px;
+}
+#all_logo{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    gap: 25px 0px;
+}
+#all_logo>div{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+#all_logo>div>img{
+    width: 100px;
+    height: 100px;
+}
+
+#all_logo>.neeche{
+    display:inline-block;
+}
+#all_logo>.neeche>h2{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #234365;
+}
+#skill_{
+    height: 60px;
+}
+
+
+@media only screen and (max-width :766px){
+
+#tech-stack{
+    height: auto;
+}
+#tech-stack>h1{
+    font-size: 35px;
+}
+#all_logo{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px 0;
+    padding-bottom: 50px;
+    justify-content: space-around;
+}
+#all_logo>div{
+    width: 150px;
+    height: 150px;
+}
+#all_logo>div>img{
+    width: 60px;
+    height: 60px;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 767px) and (max-width: 1024px){
+
+
+#all_logo{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    gap: 15px;
+}
+
+}
+
 
     </style>
 </head>
@@ -575,8 +677,6 @@ header.shadow {
     </div> -->
 
 
-
-
     <header style="width: 100%;">
         <a href="index.html" class="logo">VIKAS</a>
 
@@ -587,38 +687,36 @@ header.shadow {
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <!-- <li><a href="#github">Github</a></li> -->
             <li><a href="#contact">Contact</a></li>
             <li><a id="resume" style=" text-decoration: none; " href="./images/fw18_0302-Vikas-Yadav-Resume .pdf" download>Resume</a></li>
            
         </ul>
       </header>
 
-
-
-
     <div id="container1">
         
         <div id="intro">
             <div>Hi,</div>
             <div id="merge">
-                <div>I am Vikas Yadav</div>
-                <!-- <div id="color">Vikas Yadav</div> -->
+               <div>I am Vikas Yadav</div>
             </div>
             <div>Java Backend Developer</div>
             <button><a id="resume1" style=" text-decoration: none; color: black; " href="./images/fw18_0302-Vikas-Yadav-Resume .pdf" download> Resume</a></button>
-            <!-- <button ><a style=" text-decoration: none; " href="./images/Vikas_Yadav_Resume .pdf" download>Download</a></button> -->
             <div id="icons">
                 <i id="linkedin" class="fa-brands fa-linkedin-in icons"></i>
                 <i id="github" class="fa-brands fa-github icons"></i>
             </div>
             
         </div>
+
         <div id="photo">
             <img src="https://avatars.githubusercontent.com/u/101393457?s=400&u=ff7def193ac7eb07f472c9c6827a120152ec199b&v=4">
         </div>
+
     </div>
+
     <a name="about"></a>
+
     <div id="container2">
         <div>
             <h1 class="heading">About</h1>
@@ -627,8 +725,9 @@ header.shadow {
             <p>Drop a mail @ vika.yadav222@gmail.com</p>
         </div>
     </div>
+
     <a name="skills"></a>
-    <div id="container3">
+    <!-- <div id="container3">
         <h1 class="heading">Skills</h1>
         <div id="table">
             <div>
@@ -654,8 +753,39 @@ header.shadow {
                 <div>Leadership</div>
             </div>
         </div>
+    </div> -->
+
+    <div id="skill_" ></div>
+
+    <div id="tech-stack">
+        <h1>Tech-Stacks</h1>
+        <div id="all_logo">
+            <div class="neeche"><img src="./resource/spring_.png" alt=""><h2>Spring Boot</h2></div>
+            <div class="neeche"><img src="./resource/java_.png" alt=""><h2>Java</h2></div>
+            <div class="neeche"><img src="./resource/hibernate.png" alt=""><h2>Hibernate</h2></div>
+            <div class="neeche"><img src="./resource/jdbc.png" alt=""><h2>JDBC</h2></div>
+            <div class="neeche"><img src="./resource/sql.png" alt=""><h2>SQL</h2></div>
+            <div class="neeche"><img src="./resource/html.png" alt=""><h2>HTML</h2></div>
+            <div class="neeche"><img src="./resource/css.png" alt=""><h2>CSS</h2></div>
+            <div class="neeche"><img src="./resource/javascript.png" alt=""><h2>Javascript</h2></div>
+
+           
+        </div>
+        <h1 id="toolstitle">Tools</h1>
+        <div id="all_logo">
+            <div class="neeche"><img src="./resource/spring boot suite.png" alt=""><h2>Spring Tool</h2></div>
+            <div class="neeche"><img src="./resource/mysql.png" alt=""><h2>MySQL</h2></div>
+            <div class="neeche"><img src="./resource/git.png" alt=""><h2>Git</h2></div>
+            <div class="neeche"><img src="./resource/github.png" alt=""><h2>GitHub</h2></div>
+            <div class="neeche"><img src="./resource/vscode.png" alt=""><h2>VS Code</h2></div>
+            <div class="neeche"><img src="./resource/eclipse.png" alt=""><h2>Eclipse </h2></div>
+            <div class="neeche"><img src="./resource/postman.jpg" alt=""><h2>Postman</h2></div>
+            <div class="neeche"><img src="./resource/railway.png" alt=""><h2>Railway</h2></div>
+        </div>
     </div>
+
     <a name="projects"></a>
+
     <div id="container4">
         <h1 class="heading">Projects</h1>
         <div id="box">
@@ -703,9 +833,6 @@ header.shadow {
         </div>
     </div>
 
-  
-
-    
      <!-- github -->
 
 <section class="github-st" id="github-">
@@ -735,7 +862,7 @@ header.shadow {
     </div>
 </section>
     
-    <div id="footer">
+<div id="footer">
         <div id="container5">
             <a name="contact"></a>
             <h1 class="heading">Get in touch</h1>
@@ -777,7 +904,7 @@ header.shadow {
             </div>
             <div id="last">Designed and build by Vikas Yadav, 2022.</div>
         </div>
-    </div>
+</div>
     
 </body>
 </html>
